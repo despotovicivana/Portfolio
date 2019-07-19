@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mladen Milinkovic</title>
+    <link rel="icon" href="images/logo/LogoBlack.png" type="image/x-icon">
+
+    <!-- font awesome 5 -->
+    <link href="font_awesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="font_awesome/css/solid.css" rel="stylesheet">
+    <link href="font_awesome/css/brands.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="sidebar black animate-right xxlarge"  id="mySidebar">
+      
+        <!-- Button Close Hidden Sidebar Navigation -->
+        <a href="javascript:void(0)" onclick="closeNav()" class="button black xxlarge display-topright">
+          <i class="fas fa-times"></i>
+        </a>
+        <!-- End Button Close Navigation -->
+
+        <!-- Navigation Items -->
+        <div class="bar-block center">
+          <a href="#" class="bar-item button text-grey hover-black" onclick="closeNav()">Home</a>
+          <a href="#portfolio" class="bar-item button text-grey hover-black" onclick="closeNav()">Portfolio</a>
+          <a href="#about" class="bar-item button text-grey hover-black" onclick="closeNav()">About</a>
+          <a href="#contact" class="bar-item button text-grey hover-black" onclick="closeNav()">Contact</a>
+        </div>
+        <!-- End Navigation Items -->
+    </nav>
+    <!-- End Hidden Sidebar -->
+
+    <!-- Page Content -->
+    <div class="main padding-large">
+
+        <!-- Menu Icon To Open Hidden Sidebar Navigation -->
+        <span class="button display-topright white xxlarge text-grey hover-text-black" onclick="openNav()"><i class="fas fa-bars"></i></span>
+        <!-- End Menu Icon -->
+
+        <!-- Sidebar with name--> 
+        <nav class="content-with-name center">
+          <header>
+            <p>Structural Engineer.</p>
+            <p>International Welding Engineer.</p>
+            <p>Interior Designer.</p>
+            <h1><b>Mladen</b></h1>
+            <h1><b>Milinkovic</b></h1>
+            <button class="button light-grey padding-large margin-top"  onclick="window.open('MladenMilinkovicResume.pdf')">
+              <i class="fa fa-download"></i> 
+              Download Resume
+            </button>
+          </header>
+        </nav>
+
+        <!-- Portfolio Section -->
+        <div class="content padding-32" id="portfolio">
+          
+
+          <h2 class="text-grey">My Portfolio</h2>
+          <hr class="opacity">
+
+          <!-- Grid for photos -->
+          <div class="row">
+              <div class="portfolio">
+                  <img src="images/portfolio/German/Sundsvall Bridge/3.jpg" onclick="window.open('portfolios/portfolio_1.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Sundsvall Bridge</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/German/Messe Hall 3c Nuremberg/9.jpg" onclick="window.open('portfolios/portfolio_2.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Messe Hall 3c Nuremberg</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/German/Church blessing hall 3C/6.jpg" onclick="window.open('portfolios/portfolio_3.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Church blessing hall 3C</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/Serbia/EyeMaxx/2.jpg" onclick="window.open('portfolios/portfolio_4.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Logistics Center Eyemaxx</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/Serbia/Stop Shop/16.jpg" onclick="window.open('portfolios/portfolio_5.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">STOP SHOP retail park</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/Russia/main-oil-pipeline-no1/5.jpg" onclick="window.open('portfolios/portfolio_5.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Main Oil Pipeline No1</div>
+                  </div>
+              </div>
+              <div class="portfolio">
+                  <img src="images/portfolio/Russia/main-oil-pipeline-no2/4.jpg" onclick="window.open('portfolios/portfolio_5.html', '_self')">
+                  <div class="overlay">
+                      <div class="text">Main Oil Pipeline No2</div>
+                  </div>
+              </div>
+              <!-- End photo grid -->
+          </div>
+        <!-- End Portfolio Section -->
+        </div>
+
+        <!-- About Section -->
+        <div class="about content justify text-grey padding-32" id="about">
+            <h2>About</h2>
+            <hr class="opacity">
+            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <!-- Skills -->
+            <h3 class="padding-16">My Skills</h3>
+            <!-- Skill 1 -->
+            <p class="wide">Photography</p>
+            <div class="light-grey">
+                <div class="container center width-95 dark-grey">95%</div>
+            </div>
+            <!-- Skill 2 -->
+            <p class="wide">Web Design</p>
+            <div class="light-grey">
+                <div class="container center width-85 dark-grey">85%</div>
+            </div>
+            <!-- Skill 3 -->
+            <p class="wide">Photoshop</p>
+            <div class="light-grey">
+                <div class="container center width-80 dark-grey">80%</div>
+            </div>
+            <br>
+
+            <div class="row center dark-grey padding-16 section">
+              <div class="quarter section">
+                <span class="xlarge">14+</span><br>
+                Partners
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">55+</span><br>
+                Projects Done
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">89+</span><br>
+                Happy Clients
+              </div>
+              <div class="quarter section">
+                <span class="xlarge">150+</span><br>
+                Meetings
+              </div>
+            </div>
+            <!-- End Skills -->
+
+            <!-- Testimonials -->
+            <h3 class="padding-24">My Reputation</h3>
+            <img src="images/Reputation/1.jpg" alt="Avatar" class="left circle margin-right">
+            <p><span class="large text-black margin-right">Chandler Bing.</span> Web Designer.</p>
+            <p>Mladen Milinkovic is just awesome. I am so happy to have met him!</p>
+            <br>
+           
+            <img src="images/Reputation/5.jpg" stylealt="Avatar" class="left circle margin-right">
+            <p><span class="large text-black margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+            <p>Mladen Milinkovic saved us from a disaster.</p>
+            <br>
+            
+            <img src="images/Reputation/3.jpg" alt="Avatar" class="left circle margin-right">
+            <p><span class="large text-black margin-right">Aleksandar Flex.</span> CEO at Company.</p>
+            <p>No one is better than Mladen Milinkovic.</p>
+            <br>
+            <!-- End Testimonials -->
+          
+        </div>
+        <!-- End About Section -->
+       
+      <!-- Contact Section -->
+      <div class="content justify padding-32 text-grey" id="contact">
+          <h2>Contact Me</h2>
+          <hr class="opacity">
+          <!-- Contact Information -->
+          <div class="section">
+              <!-- Address -->
+              <p><i class="fas fa-map-marker-alt xxlarge margin-right"></i> Chicago, Illinois, US</p>
+              <!-- Phone -->
+              <p><i class="fas fa-mobile-alt xxlarge margin-right"></i> Phone: +1 3125816250</p>
+              <!-- Email -->
+              <p><i class="fas fa-envelope xxlarge margin-right"></i> Email: milinkovicmladen86@mail.com</p>
+          </div>
+          <!-- End Contact Information -->
+
+          <!-- Image Of Google Map/Location -->
+          <div class="mapouter">
+              <div class="gmap_canvas">
+                  <iframe width="970" height="325" id="gmap_canvas" src="https://maps.google.com/maps?q=Chicago%2C%2060656%20IL&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                  <a href="https://www.maps-erstellen.de"></a>
+              </div>
+          </div>
+          <!-- End Google Map/Location -->
+
+          <!-- Send Message Form -->
+          <p>Lets get in touch. Send me a message:</p>
+          <form action="mailto:milinkovicmladen86@gmail.com" target="_blank">
+            <p><input class="input padding-16 border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="input padding-16 border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+              <button class="button light-grey padding-large margin-top" type="submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </p>
+          </form>
+          <!-- End Send Message Form -->
+      </div>
+      <!-- End Contact Section -->  
+      
+      <!-- Footer -->
+      <footer class="container padding-48 light-grey center opacity xlarge" >
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/mladen.milinkovic.984" target="_blank"><i class="fab fa-facebook-square hover-text-grey"></i></a>
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/mladen-milinkovic-a902872a" target="_blank"><i class="fab fa-linkedin hover-text-grey"></i></a>
+        <!-- Powered by -->
+        <p class="medium">Powered by <a href="http://bemomandcode.org/" target="_blank" class="hover-text-grey">Ivana Milinkovic</a></p>
+      </footer>
+      <!-- End Footer -->
+      
+    </div>
+    <!-- END PAGE CONTENT -->
+
+
+    <script>
+    // Open sidebar
+    function openNav() {
+        document.getElementById("mySidebar");
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    // Close sidebar
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+</body>
+</html>
