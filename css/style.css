@@ -1,0 +1,608 @@
+/*
+* Mladen Milinkovic Portfolio
+* Created by : Ivana Milinkovic
+* website : www.mladenmilinkovic.net
+*/
+
+/* Table of Content
+==================================================
+	- Google fonts & font family -
+	- General -
+    - Typography -
+    - Hidden Navigation Sidebar -
+	- Sidebar with name -
+    - Portfolio Section  -
+    - About Section -
+    - Testimonials -
+    - Contact Section  - 
+    - Image Of Google Map/Location -
+*/
+
+
+/* Google fonts & font family
+==================================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* General
+==================================================*/
+html {
+	box-sizing:border-box;
+	-ms-size-adjust:100%;
+	-webkit-size-adjust:100%;
+	overflow-x:hidden
+}
+
+html,
+body {
+	font-size:15px;
+	line-height:1.5
+}
+
+*, *::before, *::after{
+	box-sizing:inherit
+}
+
+body {
+	margin:0
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif
+}
+
+/* typography
+==================================================*/
+	
+h1{
+	font-size:36px
+}
+
+h2{
+	font-size:30px
+}
+
+h3{
+	font-size:24px
+}
+
+h4{
+	font-size:20px
+}
+
+h5{
+	font-size:18px
+}
+
+h6{
+	font-size:16px
+}
+	
+h1, h2, h3, h4, h5, h6{
+	font-weight:400;
+	margin:10px 0
+}
+
+footer, main, menu, nav, section {
+	display:block
+}
+
+hr {
+	border:0;
+	border-top:1px solid #eee;
+	margin:20px 0;
+	box-sizing:content-box;
+	height:0;
+	overflow:visible
+}
+
+img {
+	border-style:none;
+	vertical-align:middle
+}
+
+a{
+	color:inherit;
+	background-color:transparent
+}
+
+a:active, a:hover{
+	outline-width:0
+}
+
+.main{
+	transition:margin-left .4s
+}
+	
+.image {
+	max-width:100%;
+	height:auto
+}
+	
+.button {
+	font:inherit;
+	margin:0;
+	border:none;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+.button:hover{
+	color:#000!important;
+	background-color:#ccc!important
+}
+
+.content{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:980px
+}
+
+.section{
+	margin-top:16px!important;
+	margin-bottom:16px!important
+}
+
+/* portfolio row */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.row-padding,
+.row-padding>.half,
+.row-padding>.third,
+.row-padding>.twothird,
+.row-padding>.threequarter,
+.row-padding>.quarter,
+.row-padding>.col {
+	padding:0 8px
+}
+
+.container {
+	padding:0.01em 16px
+}
+
+.container,
+.hover-container:hover{
+	container:0.60
+}
+
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before {
+	display:none!important
+}
+
+.opacity,.hover-opacity:hover {
+	opacity:0.60
+}
+
+/* Font 
+==================================================*/
+
+.xlarge{
+	font-size:20px!important
+}
+
+.xxlarge{
+	font-size:36px!important
+}
+
+.jumbo{
+	font-size:60px!important
+}
+
+.wide {
+	letter-spacing:4px
+}
+
+.center {
+	text-align:center!important
+}
+
+.justify {
+	text-align:justify!important
+}
+
+.margin-top {
+	margin-top:16px!important
+}
+
+/* Padding 
+==================================================*/
+
+.padding-16{
+	padding-top:16px!important;
+	padding-bottom:16px!important
+}
+
+.padding-24{
+	padding-top:24px!important;
+	padding-bottom:24px!important
+}
+
+.padding-32{
+	padding-top:32px!important;
+	padding-bottom:32px!important
+}
+
+.padding-48{
+	padding-top:48px!important;
+	padding-bottom:48px!important
+}
+
+.padding-large{
+	padding:12px 24px!important
+}
+
+/* Colors 
+==================================================*/
+
+.white,
+.hover-white:hover {
+	color:#000!important;
+	background-color:#fff!important
+}
+
+.black,.hover-black:hover {
+	color:#fff!important;
+	background-color:#000!important
+}
+
+.light-grey,
+.hover-light-grey:hover,
+.light-gray,
+.hover-light-gray:hover {
+	color:#000!important;
+	background-color:#f1f1f1!important
+}
+
+.dark-grey,
+.hover-dark-grey:hover,
+.dark-gray,
+.hover-dark-gray:hover {
+	color:#fff!important;
+	background-color:#616161!important
+}
+
+.grey,
+.hover-grey:hover,
+.gray,.hover-gray:hover {
+	color:#000!important;
+	background-color:#9e9e9e!important
+}
+
+.text-white,
+.hover-text-white:hover {
+	color:#fff!important
+}
+
+.text-black,
+.hover-text-black:hover {
+	color:#000!important
+}
+
+.text-grey,
+.hover-text-grey:hover,
+.text-gray,
+.hover-text-gray:hover {
+	color:#757575!important
+}
+
+.text-light-grey,
+.hover-text-light-grey:hover,
+.text-light-gray,.hover-text-light-gray:hover {
+	color:#f1f1f1!important
+}
+
+.text-dark-grey,
+.hover-text-dark-grey:hover,
+.text-dark-gray,.hover-text-dark-gray:hover {
+	color:#3a3a3a!important
+}
+
+.border-white,
+.hover-border-white:hover {
+	border-color:#fff!important
+}
+
+.border-black,
+.hover-border-black:hover{
+	border-color:#000!important
+}
+
+.border-grey,
+.hover-border-grey:hover,
+.border-gray,.hover-border-gray:hover {
+	border-color:#9e9e9e!important
+}
+
+.border-light-grey,
+.hover-border-light-grey:hover,
+.border-light-gray,
+.hover-border-light-gray:hover {
+	border-color:#f1f1f1!important
+}
+
+.border-dark-grey,
+.hover-border-dark-grey:hover,
+.border-dark-gray,
+.hover-border-dark-gray:hover {
+	border-color:#616161!important
+}
+
+/* Hidden Navigation Sidebar (reveals when clicked on menu icon) 
+==================================================*/
+
+.sidebar {
+	position:fixed!important;
+	display:none;
+	min-height: 100vh;
+	top:0;
+	right:0;
+	margin:auto;
+}
+
+.animate-right {
+	position:relative;
+	animation: animateright 0.4s
+}
+
+@keyframes animateright {
+	from {
+		right:-300px;
+		container:0
+	}
+	to {
+		right:0;
+		container:1
+	}
+}
+
+/** Button Close Hidden Sidebar Navigation 
+==================================================*/
+.display-topright{
+	top:0;
+	position:fixed;
+	z-index:1;
+	width:auto;
+	right:0px;
+	padding:0 12px 0;
+}
+
+/** Navigation Items 
+==================================================*/	
+.bar-block {
+	width:100%;
+	display:block;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);	
+}
+
+.bar-item {
+	display:block;
+	padding-bottom: 5vh;
+}
+
+/** Sidebar with name
+==================================================*/
+.content-with-name{
+	display:block;
+	min-height:100vh;
+	margin:auto;
+	position: relative;
+}
+
+/** Vertically center a child within a parent, when parent has display: block; */
+
+.content-with-name header {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
+}
+
+/** For small screen: */
+
+@media (max-width:768px) {
+.sidebar{
+	display:none; 
+	min-height: 100vh; 
+	width: 100%;
+	padding-top: 10vw;
+	right:0;
+	z-index:2;
+}
+	}
+
+/** For tablets and desktop 
+==================================================*/
+@media (min-width:768px){
+	.content-with-name{
+		width: 40%;
+		position:fixed!important;
+		z-index:1;
+		overflow:auto;
+		left:0; 
+	}
+			
+	.content-with-name h1{
+		font-size: 60px;
+	}
+			
+	.main{
+		margin-left:40%;
+		margin-right:0!important
+	}
+			
+	.sidebar{
+		width: 60%;
+		z-index:2;
+		right:0;
+	}
+}
+	
+/** Portfolio Section 
+==================================================*/
+
+.portfolio{
+	position: relative;
+	width: 100%;
+	padding-bottom: 16px;
+}
+
+.portfolio img{
+	display: block;
+ 	width: 100%;
+  	height: auto;
+    filter: url(filters.svg#grayscale); /*Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
+
+.portfolio img:hover {
+	filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.overlay {
+	position: absolute;
+ 	top: 16px;
+	left: 14px;
+	height: 4vh;
+  	width: auto;
+  	opacity: 1;
+  	background-color: #fff;
+}
+
+.portfolio:hover .overlay{
+	opacity: 0.9;
+}	
+	
+.text {
+   	color:#000;
+  	font-size: 3vh;
+  	text-align: center;
+}
+
+/* About Section 
+===========================================*/
+
+.width-95{
+	width:95%;
+}
+
+.width-85{
+	width:85%;
+}
+
+.quarter{
+	float:left;width:100%;
+	width:24.99999%
+}
+
+.quarter,.row-padding>.col{
+		padding:0 8px
+}
+
+/* Testimonials
+================================================*/
+
+.left {
+	float:left!important
+}
+
+.right{
+	float:right!important
+}
+
+.circle {
+	border-radius:50%
+}
+
+.margin-right {
+	margin-right:16px!important
+}
+
+.about img{
+	filter:grayscale(75%);
+	max-width: 8%;
+}
+
+.about img:hover{
+	filter:grayscale(0%);
+}
+
+/* Image Of Google Map/Location
+================================================*/
+.mapouter {
+	filter:grayscale(90%);
+	position:relative;
+	text-align:right;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+}
+
+/* Footer
+================================================*/
+.input {
+	padding: 8px;
+	display: block;
+	border: 1px solid #ccc;
+	width: 100%}
+
+
+/* Portfolio_number
+================================================*/
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top:-8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+	-ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
